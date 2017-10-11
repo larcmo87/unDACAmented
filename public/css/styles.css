@@ -1,0 +1,313 @@
+.row {
+  margin-bottom: auto;
+}
+/*header text*/
+#banner_subheading {
+	font-size: 0.6em;
+	font-color: #e82020;
+}
+h1 {
+    font-size: 45px;
+    line-height: 60%;
+    margin: 2rem 2rem;
+}
+
+/*navigation*/
+nav {
+    color: #e82020;
+    background-image: url(../images/banner-bg.jpg);
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+.brand-logo {
+  width: 450px;
+  height: 110px;
+  background-image: url(../images/logo.png);
+}
+
+ul#nav-mobile {
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    font-weight: 900;
+    padding-left: 30px;
+}
+
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1.25rem;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+nav ul a:hover {
+	text-decoration: none;
+	color: #93072a;
+}
+/*container*/
+section {
+	/*display: flex;*/
+  padding: 50px;
+  text-align: center;
+}
+
+.discussion{
+  margin-left: 30%;
+  background-color: #F7F6F6;
+}
+/*slider*/
+.slider {
+  
+  height: 500px;
+  width: 900px;
+}
+
+
+.slider .indicators .indicator-item.active {
+    background-color: #991818;
+}
+/*bg of slider*/
+
+
+.firstrow {
+  background-color: #F7F6F6;
+  margin-bottom: auto;
+}
+/*end of slider*/
+
+/* Register/Signin link styling */
+#register-signin-link{  
+  padding-top: 18px;
+  height: 100px;
+}
+
+/*content area*/
+.content {
+	margin: 20px;
+	padding: 20px;
+}
+
+/*banner*/
+.banner {
+  background-color: #e82020;
+  color: #fff;
+  padding: 20px;
+  height: 400px;
+  text-align: center;
+}
+
+.material-icons{
+  font-size: 124px; 
+}
+
+#diff{
+  font-size: 67px;
+  margin-left: -120px;
+  position: relative;
+  top: 11px;
+}
+
+.small {
+  font-size: 124px;
+}
+
+p {
+  text-align: left;
+}
+
+h3 {
+    opacity: .5;
+    margin-bottom: 21px;
+    font-weight: bold;
+}
+/*graphs*/
+.graph {
+  padding: 30px 20px 20px 40px;
+  text-align: center;
+}
+/*end of graphs*/
+/*discussion*/
+.discussion {
+  padding: 100px 50px;
+  margin: 0px;
+}
+
+.discussion-header {
+  text-align: center;
+}
+.discussion-header h3 {
+  opacity: .5;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.discussion-header h2 {
+  margin-top: 0px;
+}
+/*footer*/
+.footer {
+	float: right;
+}
+
+.footer_links li{
+	float: left;
+  }
+
+#Copyright {
+  	float: left;
+  }
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: #d81327;
+}
+
+/*cards in discussion section*/
+/*no styling needed as of 949pm 10/9*/
+.side-nav{
+  width:450px;
+}
+
+/* Loggin form styling */
+#loggin-form{
+  border: #444343 solid 3px;
+  width:95%;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+
+/* Register form styling */
+#new-user-form{
+  
+  width:90%;
+  margin-top: 0;
+}
+
+.signin-register-label{
+  width: 95%;
+  height: 30px;
+  margin: 10px 10px 0 10px;  
+  padding-left:5px;
+}
+
+.discussion-card-title-all{
+  background-color: #e82020;
+  color: white;
+}
+
+
+/* Discussion Card styling */
+.discussion-card-title{
+  background-color: #e82020;
+  color: white;
+}
+
+
+.card{
+  height: 300px;
+}
+
+.card-body{
+  font-size: 18px;
+  height: 120px;
+} 
+
+.card-title-h6{
+  display:block;
+}
+
+/* Selected Discussion Styling */
+.discussion-selected{
+  margin-left: 30px;
+  font-size: 40px;  
+
+}
+
+
+#selected-discussion{
+  height: 300px;
+  border: black solid 2px;
+  font-size:20px;
+  resize:none;
+   
+}
+
+#selected-discussion-area{
+ /*  border-right-style:solid; 
+ border-right-color: black;
+ border-right-width: 1px; */
+}
+
+#selected-discussion-view{
+  /*margin-left: 100px;*/
+}
+
+ #selected-discussion-title{
+  color: black;
+  font-size:20px;
+} 
+
+/* New Discussion Styling */
+#discussion-header{
+  /*margin: auto;*/
+  margin-top: 30px;
+  background-color: #e82020;
+  padding-left: 15px;
+  height: 50px;
+  
+}
+
+#discussion-header h4{
+    color: white; 
+}
+
+#new-title-label{
+  font-size: 20px;
+  font-weight: bold; 
+  color: #088074;
+  text-decoration: underline;
+}
+
+#new-discussion-title{
+  font-size:20px;
+}
+#new-discussion-title:focus{
+  border-color: red;
+  font-size:20px;
+}
+
+#new-discussion{
+  resize:none;
+  border: black solid 2px;
+  height: 300px;
+  font-size:20px;
+}
+
+#new-discussion:active{
+  resize:none;
+  border: #e82020 solid 2px;
+
+}
+
+#submit-new-discussion{
+  background-color: #e82020;
+  
+}
+
+/* Modal Styling */
+#modal1{
+  width: 500px;
+}
+
+#modal-p{
+  font-size: 20px;
+}
+

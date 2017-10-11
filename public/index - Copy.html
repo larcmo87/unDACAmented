@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>unDACAmented</title>
+	<!-- CSS -->
+	<script type='text/javascript' > 
+  		var user_id = ""; 
+	</script>
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+	  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	  <!-- jQuery JS -->
+  	  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+	  	 
+	<!-- boostrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <!-- materialize css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	   <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<!-- project css -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	
+</head>
+<body>
+<!-- jumbotron -->
+	<a href="top"></a><!-- Hidden side panel that contains the Signin and Register forms -->
+	<ul id="slide-out" class="side-nav">
+		<li>
+			<h5 class="signin-register-label red z-depth-2">Signin<h5>
+			<div class="row" id="loggin-form">
+				<form class="white">
+			      	<div class="row">
+				        <div class="input-field col s12">
+				          <input id="user_id" type="text" class="validate black-text">
+				          <label for="user_id">User Id</label>
+				        </div>
+				    </div>
+				    <div class="row">
+				        <div class="input-field col s12">
+				          <input id="password" type="password" class="validate black-text">
+				          <label for="password">Password</label>
+				        </div>		        
+			      	</div>
+				    <div class="row">
+			        	<div class="right-align col s12">
+							<button class="btn waves-effect waves-light red left" type="submit" name="action">Signin</button>
+						</div>
+					</div>
+			    </form>
+			 </div>
+		</li>
+		<li>
+			<h5 class="signin-register-label red z-depth-2">Register<h5>
+			<div class="row" id="new-user-form">
+
+			    <form class="white">
+			      
+			        <div class="row">
+				        <div class="input-field col s12">
+				          <input id="new-user-id" type="text" class="validate black-text" >
+				          <label for="new-user-id">User Id</label>
+				        </div>
+				    </div>
+				    <div class="row">
+				        <div class="input-field col s12">
+				          <input id="new-password" type="password" class="validate black-text">
+				          <label for="new-password">Password</label>
+				        </div>		        
+			      	</div>
+			      	<div class="row">
+			        	<div class="right-align col s12">
+							<button class="btn waves-effect waves-light red left" type="submit" id="new-btn" name="action">Register</button>
+						</div>
+					</div>
+	     		</form>
+ 			</div>
+		</li>
+	</ul> <!-- End of Hidden side panel -->
+ <nav>
+    <div class="nav-wrapper"> 
+      <a href="#"><div  class="brand-logo"></div></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        <li><a href="#top">Home</a></li>
+        <li><a href="#graphs">Graphs</a></li>
+        <li><a href="#discusion-cards">Discussion</a></li>
+
+        <li><a href="" data-activates="slide-out" class="button-collapse show-on-large" id="register-signin-link">Register/Signin</a></li>
+        <li><a href="" id="log-off">Log Off</a></li>
+        <!-- <li><a href="" data-activates="slide-out" class="button-collapse show-on-large">Register/Signin</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  	<!-- slider row -->
+	<div class="row">
+		<div class="col s2"></div>
+	  	<div class="col s8">
+		  	<div class="content">
+		  		<!-- NY Times artical slider at top of page -->
+		  		<div class="slider">
+		  		<!-- slider background -->
+				    <ul class="slides white"></ul> 
+	  			</div>
+		  	</div>
+	  	</div>
+	  	<div class="col s2"></div>
+    </div>
+    <!-- banner -->
+	<div class="row banner">
+		<div class="col s12">
+			<div class="col s4">
+				<h5>Employment</h5>
+				<span class="glyphicons glyphicons-fingerprint-scan"></span>
+			</div>
+			<div class="col s4">
+				<h5>Dreamers</h5>
+				<span class="glyphicons glyphicons-vcard"></span>
+			</div>
+			<div class="col s4">
+				<h5>Families</h5>
+				<span class="glyphicons glyphicons-businessman"></span>
+			</div>
+		</div>
+	</div>
+    <!-- timeline -->
+	<div class="row timeline">
+		<div class="col s12 timeline-header">
+			 <div class="row" id="discusion-cards">
+			    <div class="col s4">
+			      <div class="card">
+			        <div class="discussion-card-title">
+			          
+			          <span class="card-title" id="card-1-title">No Title</span>
+			          <a id="card-1-a" name="" class="btn-floating halfway-fab waves-effect waves-light red open-discussion pulse"><i class="material-icons">open_in_new</i></a>			          
+			        </div>
+			        <div class="card-conten card-body">
+				    	<p id="card-1-paragraph">No Discussion</p>				        
+			    	</div>
+			      </div>
+			    </div>
+			    <div class="col s4">
+			      <div class="card">
+			        <div class="discussion-card-title">			          
+			          <span class="card-title" id="card-2-title">No Title</span>
+			          <a id="card-2-a" name="" class="btn-floating halfway-fab waves-effect waves-light red open-discussion pulse"><i class="material-icons">open_in_new</i></a>
+			        </div>
+			        <div class="card-content card-body">
+			          <p id="card-2-paragraph">No Discussion</p>
+			        </div>
+			      </div>
+			    </div>
+				<div class="col s4">
+			      <div class="card">
+			        <div class="discussion-card-title">			          
+			          <span class="card-title" id="card-3-title">No Title</span>
+			          <a id="card-3-a" name=""  class="btn-floating halfway-fab waves-effect waves-light red open-discussion pulse"><i class="material-icons">open_in_new</i></a>
+			        </div>
+			        <div class="card-content card-body">
+			          <p id="card-3-paragraph">No Discussion</p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="col s4">
+			      <div class="card" >
+			        <div class="discussion-card-title">			          
+			          <span class="card-title" id="card-4-title">No Title</span>
+			          <a id="card-4-a" name="" class="btn-floating halfway-fab pulse waves-effect waves-light red open-discussion"><i class="material-icons">open_in_new</i></a>
+			        </div>
+			        <div class="card-content card-body">
+			          <p id="card-4-paragraph">No Discussion</p>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col s4">
+			      <div class="card" >
+			        <div class="discussion-card-title">			          
+			          <span class="card-title" id="card-5-title">No Title</span>
+			          <a id="card-5-a" name="" class="btn-floating halfway-fab waves-effect waves-light red open-discussion pulse"><i class="material-icons">open_in_new</i></a>
+			        </div>
+			        <div class="card-content card-body">
+			          <p id="card-5-paragraph">No Discussion</p>
+			        </div>
+			      </div>
+			    </div>
+				<div class="col s4">
+			      <div class="card">
+			        <div class="discussion-card-title">			          
+			          <span class="card-title" id="card-6-title">No Title</span>			          
+			          <a id="card-6-a" name="" class="btn-floating halfway-fab waves-effect waves-light red open-discussion pulse"><i class="material-icons">open_in_new</i></a>
+			        </div>
+			        <div class="card-content card-body">
+			          <p id="card-6-paragraph">No Discussion</p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			<!-- <h3><small>Timeline</small></h3>
+			<h2>Fighting For Dreamers</h2> -->
+		</div>
+	</div>
+
+<!-- footer -->
+<footer class="page-footer">
+	<div class="row">
+            <div class="container">
+	            <p id="Copyright">© 2017 Copyright Text</p>
+	            <!-- footer links -->
+	            <div class="footer">
+	            	<ul class="footer_links">
+	                  <li><a class="grey-text text-lighten-3" href="#!"> Home </a></li>
+	                  <li>&nbsp;|&nbsp;<a class="grey-text text-lighten-3" href="#!"> Graphs </a></li>
+	                  <li>&nbsp;|&nbsp;<a class="grey-text text-lighten-3" href="#!">  Discussion </a></li>
+	                  <li>&nbsp;|&nbsp;<a class="grey-text text-lighten-3" href="" data-activates="slide-out" class="button-collapse show-on-large" id="register-signin-link"> Register/Signin</a></li>
+	                </ul>
+	            </div>
+      		</div>
+	</div>	
+</footer>
+<!-- javascript -->
+	<!-- bootstrap js -->
+	
+          
+	  <!-- Code to the JavaScript File -->
+  	  <script src="js/main.js"></script>
+  	  <script>
+  	  	 /*$(document).ready(function(){
+     		 $('.slider').slider({full_width: true});
+    	  });*/
+  	  </script>
+</body>
+</html>

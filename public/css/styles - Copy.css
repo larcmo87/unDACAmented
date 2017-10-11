@@ -1,0 +1,191 @@
+/*header text*/
+#banner_subheading {
+	font-size: 0.6em;
+	font-color: #e82020;
+}
+h1 {
+    font-size: 45px;
+    line-height: 60%;
+    margin: 2rem 2rem;
+}
+
+/*navigation*/
+nav {
+    color: #e82020;
+    background-image: url(../images/banner-bg.jpg);
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+.brand-logo {
+  width: 450px;
+  height: 110px;
+  background-image: url(../images/logo.png);
+}
+
+ul#nav-mobile {
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    font-weight: 900;
+    padding-left: 30px;
+}
+
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1.25rem;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+nav ul a:hover {
+	text-decoration: none;
+	color: #93072a;
+}
+/*container*/
+section {
+	/*display: flex;*/
+  padding: 50px;
+  text-align: center;
+}
+/*
+.discussion{
+  margin-left: 30%;
+}*/
+
+/*slider*/
+.slider {
+  
+  height: 500px;
+  width: 700px;
+}
+/* Register/Signin link styling */
+#register-signin-link{  
+  padding-top: 18px;
+  height: 100px;
+}
+
+/*content area*/
+.content {
+	margin: 20px;
+	padding: 20px;
+}
+
+/*banner*/
+.banner {
+  background-color: #e82020;
+  color: #fff;
+  padding: 20px;
+  height: 400px;
+  text-align: center;
+}
+
+/*timeline*/
+.timeline {
+  padding: 100px 50px;
+  margin: 0px;
+}
+
+.timeline-header {
+  text-align: center;
+}
+.timeline-header h3 {
+  opacity: .5;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.timeline-header h2 {
+  margin-top: 0px;
+}
+/*footer*/
+.footer {
+	float: right;
+}
+
+.footer_links li{
+	float: left;
+  }
+
+#Copyright {
+  	float: left;
+  }
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: #d81327;
+}
+
+
+/* Loggin form styling */
+#loggin-form{
+  border: #444343 solid 3px;
+  width:90%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+/* Register form styling */
+#new-user-form{
+   /*border: #444343 solid 2px;*/
+  width:90%;
+  margin-top: 0;
+}
+
+.signin-register-label{
+  /*width: 100px;*/
+  height: 30px;
+  margin: 0 5px 0 5px;
+  margin-bottom: 0;
+}
+
+/* Discussion Card styling */
+.discussion-card-title{
+  background-color: #e82020;
+  color: white;
+}
+ 
+.card-body{
+  
+  height: 120px;
+} 
+
+.card-title-h6{
+  display:block;
+}
+
+/* Selected Discussion Styling */
+.discussion{
+  margin-left: 30px;
+  font-size: 40px;
+  
+
+}*
+
+
+#selected-discussion{
+  height:200px;
+  width:95%; 
+  resize:none;
+}
+
+/*#selected-discussion-area{
+  border-right-style:solid; 
+  border-right-color: black;
+  border-right-width: 1px;
+}*/
+
+#selected-discussion-view{
+  margin-left: 100px;
+}
+
+#selected_discussion-title{
+  /*width: 95%;*/
+  resize:none;
+}

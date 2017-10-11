@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "bamcamlam87!",
+    "database": "daca_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": null,
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": null,
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
