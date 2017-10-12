@@ -87,7 +87,8 @@ $("#submit-new-discussion").on("click",function(){
             
           }else{
             //Prepend the most current submitted discussion to the discussion board and load
-            loadDiscussionCards(); 
+           
+            addToDiscustionBorad(res.id, res.title, res.body); 
             console.log("post successful res = " + JSON.stringify(res.body));
           }
          
@@ -113,6 +114,25 @@ function getSelectedDiscussion(postedId){
   }
 }
 
+
+function addToDiscustionBorad(postId,postTitle,postBody){
+  
+   $('.discussions-all').prepend(
+        "<li>" + 
+          "<div class='card'>" +
+            
+            "<div class='discussion-card-title-all z-depth-4postBody'>" + 
+                "<span class='card-title all-discussion-card-title' data-post-id='" + postId + "'>" + postTitle+ "</span>" +
+                // "<div>Posted by: " + userid + "</div>"+
+            "</div>" +           
+         
+          "<div class='card-content card-body'>" +
+              "<p>" + postBody + "</p>" +
+          "</div>" +
+           "</div>" +
+        "</li>"
+      );
+}
 //Load the Discussion Bord with all discussion
 function loadDiscussionCards(){
    $.get("/api/posts", function(res) {
@@ -130,7 +150,7 @@ function loadDiscussionCards(){
                     "<div>Posted by: " + res[i].User.userId + "</div>"+
                 "</div>" +           
              
-              "<div class='card-content card-body'>" +
+              "<div class='card-content card-body truncate'>" +
                   "<p>" + res[i].body + "</p>" +
               "</div>" +
                "</div>" +
