@@ -4,35 +4,7 @@ var jwt = require("jsonwebtoken");
 
 module.exports = function(app) {
 
-  /*
-  app.post("/api/signin", function(req, res){
-     console.log("In signin get");
-    db.User.findOne({userId: req.body.userId}, function(req,User){
-
-      console.log("User =" + User);
-      bcrypt.compare(req.body.userPW, User.userPW, function(err, result){
-          if(result){
-            user = {
-              userId: req.body.userPW,
-              userPW: User.userPW
-            }
-            var token = jwt.sign(user, process.env.SECRET_KEY,{
-              expiresin: 8000,
-            });
-
-            res.json({
-               success: true,
-               token: token
-            });
-            
-          }else{
-            return res.send("didn't work");
-          }
-
-      });//End of bcrypt.compare
-
-    });//end of db.User.findOne
-  });//End of post*/
+ 
 
   //PUT route to query database for user record
   app.put("/api/signin", function(req, res,next) {
